@@ -1,7 +1,5 @@
 package org.kornel.bloom.hash
 
-import java.io.{ObjectOutputStream, ByteArrayOutputStream}
-
 object FNV {
 
   private val MaxUnsignedInt = 0xFFFFFFFFL
