@@ -1,5 +1,6 @@
 package org.kornel.bloom.hash
 
+import org.kornel.bloom.hash.n32.{Hsieh, MurMur3, FNV}
 import org.specs2.ScalaCheck
 import org.specs2.mutable.Specification
 

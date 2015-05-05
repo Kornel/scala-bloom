@@ -1,6 +1,8 @@
-package org.kornel.bloom.hash
+package org.kornel.bloom.hash.n32
 
-object Hsieh extends Hash {
+import org.kornel.bloom.hash.Hash
+
+object Hsieh extends Hash[Int] {
 
   override def apply(key: Array[Byte]): Int = {
     var hash: Int = 0

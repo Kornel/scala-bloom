@@ -1,9 +1,9 @@
 package org.kornel.bloom.hash
 
-trait Hash {
+trait Hash[N] {
 
-  def apply(bytes: Array[Byte]): Int
+  def apply(bytes: Array[Byte]): N
 
-  final def apply(anyRef: AnyRef): Int = apply(anyRef2Bytes(anyRef))
+  final def apply(anyRef: AnyRef): N = apply(anyRef2Bytes(anyRef))
 
 }

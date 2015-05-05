@@ -1,6 +1,8 @@
-package org.kornel.bloom.hash
+package org.kornel.bloom.hash.n32
 
-object FNV extends Hash {
+import org.kornel.bloom.hash.Hash
+
+object FNV extends Hash[Int] {
 
   private val MaxUnsignedInt = 0xFFFFFFFFL
 
